@@ -1,0 +1,10 @@
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let city of cities">
+    <mat-expansion-panel-header>
+      {{ city.name }}
+    </mat-expansion-panel-header>
+    <p>Country: {{ city.country }}</p>
+    <p>Population: {{ city.population }}</p>
+    <p>Native Name: {{ city.name_native }}</p>
+  </mat-expansion-panel>
+</mat-accordion>
